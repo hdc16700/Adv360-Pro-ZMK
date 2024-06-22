@@ -1,8 +1,26 @@
+macro_ctrl_z: macro_ctrl_z{
+compatible = "zmk,behavior-macro";
+label = "macro_ctrl_z";
+#binding-cells = <0>;
+bindings = <&kp LC(Z)>;
+};
+macro_ctrl_x: macro_ctrl_x{
+compatible = "zmk,behavior-macro";
+label = "macro_ctrl_x";
+#binding-cells = <0>;
+bindings = <&kp LC(X)>;
+};
+macro_ctrl_v: macro_ctrl_v{
+compatible = "zmk,behavior-macro";
+label = "macro_ctrl_v";
+#binding-cells = <0>;
+bindings = <&kp LC(V)>;
+};
 macro_ctrl_c: macro_ctrl_c{
 compatible = "zmk,behavior-macro";
 label = "macro_ctrl_c";
 #binding-cells = <0>;
-bindings = <&kp LEFT_SHIFT>, <&kp C>;
+bindings = <&kp LC(C)>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
@@ -38,5 +56,5 @@ macro_kinesis: macro_kinesis{
 compatible = "zmk,behavior-macro";
 label = "macro_kinesis";
 #binding-cells = <0>;
-bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
+bindings = <&kp LS>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
